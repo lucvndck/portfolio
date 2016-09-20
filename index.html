@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio | Luc Van Dijck</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    
+    <!-- jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   
+   <section class="head">
+       <a class="head-item" href="#"><img class="logo" src="img/logo-portfolio.svg" alt=""></a>
+       <nav class="nav head-item">
+           <ul>
+               <li><a href="" class="anav">Home</a></li>
+               <li><a href="" class="anav">History</a></li>
+               <li><a href="" class="anav">CV</a></li>
+               <li class="btn-success"><a href="">Contact</a></li>
+           </ul>
+       </nav>
+        <button class="btn-success mobilemenu">Menu</button>
+   </section><!-- section HEAD -->
+  
+   <section class="mobilenav">
+       <ul>
+           <li><a href="">Home</a></li>
+           <li><a href="">History</a></li>
+           <li><a href="">CV</a></li>
+           <li><a href="">Contact</a></li>
+       </ul>
+   </section>
+   
+   <section class="hero">
+      <div class="hero-content container">
+          <h1>Saxofonist met</h1>
+           <h1>passie voor Webdesign</h1>
+           <div class="description">
+               <p>HTML5 CSS3 jQuery</p>
+               <p>WordPress Drupal</p>
+               <br>
+               <p class="watch">And Others</p>
+           </div><!-- end description -->
+      </div><!-- end hero-content -->
+   </section><!-- section hero -->
+   
+   <section class="row">
+      <div class="container introduction">
+          <div class="wrap">
+               <figure>
+                   <img src="img/saxofoon.svg" alt="">
+                   <figcaption>
+                       <p class="bold">Ben een Jazzmuzikant</p>
+                       <p>en geef les in enkele academies</p>
+                       <button class="btn">Lees verder</button>
+                   </figcaption>
+               </figure>
+           </div><!-- end wrap -->
+           <div class="wrap">
+               <figure>
+                   <img src="img/desktop2.svg" alt="">
+                   <figcaption>
+                       <p class="bold">Zelfstudie Webdesign</p>
+                       <p>Omdat er een job als IT-me...</p>
+                       <button class="btn">Lees verder</button>
+                   </figcaption>
+               </figure>
+           </div><!-- end wrap -->
+           <div class="wrap">
+               <figure>
+                   <img src="img/knowledge3.svg" alt="">
+                   <figcaption>
+                       <p class="bold">Verdere studies</p>
+                       <p>OSTraining | Udemy | ...</p>
+                       <button class="btn">Lees verder</button>
+                   </figcaption>
+               </figure>
+           </div><!-- end wrap -->
+      </div><!-- container introduction -->  
+      
+   </section><!-- section row -->
+   
+   <section>
+    <div class="container">
+        <h2>Saxofoon &amp; Jazz</h2>
+         <p>Mijn eerste grote passie. Buiten m'n eerste lief natuurlijk</p>
+         <p>Vrijheid op m'n instrument is al wat telt. Gekke is dat ik daar zoveel heb moeten voor studeren</p>
+        <h2>Waterski</h2>
+        <p>Ja, weet het. Een dure hobby hé.</p>
+        <p>Maar het is simpel hoor. Je moet gewoon iemand kennen die dat doet</p>
+        <h2>Cafeïne</h2>
+        <p>Mmmm, een kleine verslaving.</p>
+        <p>De koffiebar om de hoek ziet me al van ver komen</p>
+    </div><!-- end container -->
+     
+   </section>
+   
+   
+   <footer>
+       
+   </footer>
+    
+    <!-- om de mobile nav weer te geven of te verbergen 
+    ===================================================-->
+    <script>
+    $(document).ready(function(){
+        $(".mobilemenu").click(function () {
+          $(".mobilenav").toggleClass("mobilenavtoggle");
+        });
+    });
+    $(document).ready(function(){
+        $(".head-item, .hero-content").click(function () {
+          $(".mobilenav").removeClass("mobilenavtoggle");
+        });
+    });
+    </script>
+</body>
+</html>

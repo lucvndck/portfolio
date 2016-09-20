@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+/* HEAD =============================== */
+.head {
+    display: flex;
+    padding: 20px;
+    background-color: #fbbc2c;
+    justify-content: space-between;
+}
+.logo {
+    width: 50%;
+    height: auto;
+}
+.head-item {
+    
+}
+.mobilenav {
+    position: absolute;
+/*    display: none;*/
+    right: -300px;
+    top: 0;
+    width: 300px;
+    background-color: #fff;
+    z-index: 2;
+    transition: 0.5s ease-out;
+}
+.mobilenavtoggle {
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 300px;
+    background-color: #fff;
+    transition: 0.5s ease-out;
+}
+.mobilenav li {
+    list-style: none;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #fbbc2c;
+}
+.mobilenav a {
+    text-decoration: none;
+    color: #fbbc2c;
+    padding: auto;
+    text-transform: uppercase;
+}
+.mobilemenu {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+    border: none;
+}
+nav {
+    display:none;
+}
+nav ul li {
+    padding: 0 5px;
+    line-height: 40px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.7s ease;
+}
+nav a.anav:hover {
+   background-color: #20d034;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #20d034;
+    border-radius: 6px;
+    transition: background-color 0.7s ease;
+}
+.btn-success:hover {
+    background-color: forestgreen;
+}
+@media only screen and (min-width: 700px) {
+    nav {display: block;}
+    nav ul li {display: inline-block;}
+    .mobilemenu {display: none;}
+}
+
+/* HERO================================ */
+.hero {
+    background-color: #fbbc2c;
+    padding: 20px 10px;
+}
+.hero-content {
+    text-align: center;
+    font-family: Arial;
+     
+}
+.hero-content h1 {
+    font-size: 3.4em;
+    color: #fff;
+}
+.hero-content h1:last-child {
+    padding-bottom: 20px;
+} 
+.description {
+    padding-top: 10px;
+}
+.hero-content p {
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #333;
+}
+.hero-content p.watch {
+    color: #fff;
+}
+
+/* INTRODUCTION ========================== */
+.row {
+    background: linear-gradient(180deg, #FBBC09 11.5rem, #F7F8FA 11.5rem, #F7F8FA);
+}
+
+.wrap {
+   padding: 7px;
+    max-width: 310px;
+    height: 530px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    
+}
+figure {
+    width: inherit;
+}
+.wrap img {
+    height: 330px;
+}
+.introduction {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+figcaption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 310px;
+}
+figcaption p.bold {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+.cont-btn {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    padding: 12px 53px;
+    color: #fff;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    font-size: 1.2em;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+    margin: 15px;
+    margin-bottom: 35px;
+    padding: 17px 58px;
+    background-color: deepskyblue;
+}
+
+/* RECLAME ========================== */
+@media only screen and (min-device-width: 700px){
+    .gallery-item {
+        flex: 2;
+    }
+    .example-item {
+        flex: 4;
+    }
+    .fiximg-item {
+        flex: 4;
+    }
+}
+.reclame {
+    margin-bottom: 60px;
+
+}
+.title2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.gallery {
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    padding: 0 10px;
+}
+.example-item {
+/*    margin-right: -300px;*/
+    overflow: hidden;
+}
+.example-item img {
+/*    max-width: 100%;*/
+    height: 700px;
+    max-height: 100%;
+    width: inherit;
+    overflow: visible;
+}
+.fiximg-item {
+/*    position: relative;*/
+}
+.fiximg-item img {
+/*    position: fixed;*/
+    height: 700px;
+/*    max-height: 100%;*/
+    width: inherit;
+    overflow: visible;
+}
+
+
+
+footer {
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
